@@ -1,0 +1,11 @@
+MainWindow
+  !text: tr('Qustion 7: ANSWERED!')
+  size: 250 250
+
+  @onEscape: modules.client_popup.destroy()
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    text-auto-resize: true
+    @onClick: modules.client_popup.jump()

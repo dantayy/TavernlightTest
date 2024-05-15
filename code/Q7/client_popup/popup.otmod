@@ -1,0 +1,11 @@
+Module
+  name: client_popup
+  description: Display a window with a single moving button that jumps around when clicked
+  author: Nicholas Mercadante
+  website: www.nvmerc.com
+  sandboxed: true
+  scripts: [ popup.lua ]
+  autoload: true
+  autoload-priority: 1001
+  @onLoad: init()
+  @onUnload: terminate()
